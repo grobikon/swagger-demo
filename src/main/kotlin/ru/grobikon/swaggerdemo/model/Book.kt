@@ -12,10 +12,10 @@ import javax.persistence.Table
 data class Book(
     @Id
     @GeneratedValue
-    @ApiModelProperty(value = "автоматическая генерация id")
+    @ApiModelProperty(notes = "автоматическая генерация id", example = "1")
     var id: Int? = null,
-    @ApiModelProperty(value = "Название книги")
+    @ApiModelProperty(notes = "Название книги", example = "Test 1")
     var nameBook: String,
-    @ApiModelProperty(value = "Цена книги")
+    @ApiModelProperty(notes = "Цена книги", example = "25.78")
     var price: Double
 ): Serializable
